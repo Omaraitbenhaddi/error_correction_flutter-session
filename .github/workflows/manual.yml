@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Déclencher le workflow externe
+      - name: Checkout the repository
         uses: actions/checkout@v2
         with:
-          repository: utilisateur/repo-b
-          ref: main
-          token: ${{ secrets.REPO_B_TOKEN }} # Utilisez le secret ici
-        # Vous pouvez également ajouter d'autres étapes ici si nécessaire
+          repository: utilisateur/repo-b # Replace with the target repo owner and name
+          ref: main # Replace with the target branch in repo B
+          token: ${{ secrets.GITHUB_TOKEN }}
+      # You can also add other steps here if needed
