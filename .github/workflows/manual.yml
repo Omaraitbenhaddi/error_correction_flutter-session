@@ -13,5 +13,7 @@ jobs:
       - name: Déclencher le workflow externe
         uses: actions/checkout@v2
         with:
-          repository: Omaraitbenhaddi/node.js-express-firstAPI
-          ref: main 
+          repository: utilisateur/repo-b
+          ref: main
+          token: ${{ secrets.REPO_B_TOKEN }} # Utilisez le secret ici
+        # Vous pouvez également ajouter d'autres étapes ici si nécessaire
