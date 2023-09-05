@@ -1,0 +1,17 @@
+name: Déclencher un workflow externe
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger_workflow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Déclencher le workflow externe
+        uses: actions/checkout@v2
+        with:
+          repository: Omaraitbenhaddi/E-Authentication-System-Using-QR-Code-OTP
+          ref: main 
