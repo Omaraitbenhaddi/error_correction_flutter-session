@@ -13,7 +13,7 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v2
         with:
-          repository: utilisateur/repo-b # Replace with the target repo owner and name
+          repository: Omaraitbenhaddi/node.js-express-firstAPI # Replace with the target repo owner and name
           ref: main # Replace with the target branch in repo B
           token: ${{ secrets.GITHUB_TOKEN }}
       # You can also add other steps here if needed
